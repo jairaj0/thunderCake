@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThunderCake</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <nav>
+        <button class="connect btn_connect"><i class="fas fa-user"></i>connect</button>
+        <button class="disconnect btn_connect"><i class="fas fa-user-times"></i>Disconnect</button>
+    </nav>
+
+    <!-- <div class="boxes flex-between"> -->
+        <div class="box claim_box">
+            <div class="content">
+                <h1 class="title minibox flex-between">your wallet</h1>
+
+                <h1 class="minibox flex-between">
+                    <span>Wallet Address</span>
+                    <span class="usd"><span class="p_address"></span></span>
+                </h1>
+
+                <h1 class="minibox flex-between">
+                    <span>Wallet Balance</span>
+                    <div class="twovalue">
+                        <span><span class="token_balance"></span></span>
+                        <span class="usd">( $ <span class="token_balance_usd"></span> )</span>
+                    </div>
+                </h1>
+
+                <h1 class="minibox flex-between">
+                    <span>Thoreum Balance</span>
+                    <div class="twovalue">
+                        <span><span class="thoreum_balance"></span></span>
+                        <span class="usd">( $ <span class="thoreum_balance_usd"></span> )</span>
+                    </div>
+                </h1>
+
+                <h1 class="minibox flex-between">
+                    <span>Cake Balance</span>
+                    <div class="twovalue">
+                        <span><span class="cake_balance"></span></span>
+                        <span class="usd">( $ <span class="cake_balance_usd"></span> )</span>
+                    </div>
+                </h1>
+
+                <button class="btn_claim claimbtn"><i class="far fa-gem"></i>Manual Claim</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="content">
+             <h1 class="title minibox flex-between">ThunderCake Stats</h1>
+     
+             <h1 class="minibox flex-between">
+                 <span>Total Rewarded</span>
+                 <span class="usd">$ <span class="ttr"></span></span>
+             </h1>
+     
+             <h1 class="minibox flex-between">
+                 <span>$CAKE Rewarded</span>
+                 <div class="twovalue">
+                     <span class="cr"></span>
+                     <span class="usd">( $ <span class="crd"></span> )</span>
+                 </div>
+             </h1>
+     
+             <h1 class="minibox flex-between">
+                 <span>$THOREUM Rewarded</span>
+                 <div class="twovalue">
+                     <span class="tr"></span>
+                     <span class="usd">( $ <span class="trd"></span> )</span>
+                 </div>
+             </h1>
+     
+             
+             <h1 class="minibox flex-between">
+                 <span>THUNDERCAKE Price</span>
+                 <span class="usd">$ <span id="price"></span></span>
+             </h1>
+             
+             <h1 class="minibox flex-between">
+                 <span>Market Cap</span>
+                 <span class="usd">$ <span class="mc"></span></span>
+             </h1>
+             
+             <h1 class="minibox flex-between">
+                 <span>Circulating Supply</span>
+                 <span class="cs"></span>
+             </h1>
+             
+             <h1 class="minibox flex-between">
+                 <span>Total Burned</span>
+                 <span class="tb"></span>
+             </h1>
+             
+             <h1 class="minibox flex-between">
+                 <span>Max Sell</span>
+                 <span class="Msell"></span>
+             </h1>
+     
+            </div>
+         </div>
+    <!-- </div> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.1-rc.2/web3.min.js" integrity="sha512-KURAVUCRxZKDemghhiNqTnYzVPUtO3GYznBZRWRBT2GJJ5PmePAxfO7QMGCM8xUJ0QfrUYJDrtRJM4L4NOtfow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.3-rc.0/web3.min.js" integrity="sha512-+18yqikfKtcOi8TjTjfcOdQsu8XaBg0JIJlZkhcsegIFgCGbQzAoTR1AeutQBNraEf8qCrSpua2EMugVWO+utA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/evm-chains@0.2.0/dist/umd/index.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/web3modal"></script>
+    <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider"></script>
+    <script type="module" src="./test.js"></script>
+</body>
+</html>
